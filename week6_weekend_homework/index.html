@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car List</title>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+    <form id="new-item-form">
+        <div id="form-wrapper">
+          <div class="form-item">
+            <label for="make" class="primary">Make</label>
+            <input type="text" id="make" required/>
+          </div>
+  
+          <div class="form-item">
+            <label for="model" class="primary">Model</label>
+            <input type="text" id="model" required/>
+          </div>
+
+          <div class="form-item">
+            <label for="year" class="primary">Year</label>
+            <input type="text" id="year" required/>
+          </div>
+  
+          <div class="form-item">
+            <label for="colour" class="primary">Colour</label>
+            <select id="colour">
+              <option value="" disabled selected></option>
+              <option value="Black">Black</option>
+              <option value="Blue">Blue</option>
+              <option value="Red">Red</option>
+              <option value="Silver">Silver</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+
+        </div>
+        <!-- <div class="radio-button">
+            <p>Euro NCAP Rating:</p>
+            <div>
+                <input type="radio" id="one" name="star" value="one" checked>
+                <label for="one">★☆☆☆☆</label>
+            </div>
+            <div>
+                <input type="radio" id="two" name="star" value="two">
+                <label for="two">★★☆☆☆</label>
+            </div>
+            <div>
+                <input type="radio" id="three" name="star" value="three">
+                <label for="three">★★★☆☆</label>
+            </div>
+            <div>
+                <input type="radio" id="four" name="star" value="four">
+                <label for="four">★★★★☆</label>
+            </div>
+            <div>
+                <input type="radio" id="five" name="star" value="five">
+                <label for="five">★★★★★</label>
+            </div>
+        </div> -->
+        <input type="submit" value="save"/>
+    </form>
+  
+      <button id="delete-all">Delete All</button>
+  
+      <h1>Car List</h1>
+      <ul id="car-list"></ul>
+
+</body>
+</html>
