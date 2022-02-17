@@ -118,6 +118,19 @@ describe('Calculator', () => {
     equals.simulate('click');
     expect(runningTotal.text()).toEqual('10');
   })
-    
+
+  it('should give error when divided by 0', () => {
+    const button5 = container.find('#number5');
+    const divideButton = container.find('#operator-divide')
+    const button0 = container.find('#number0');
+    const equals = container.find('#operator-equals');
+    const runningTotal = container.find('#running-total');
+    button5.simulate('click');
+    divideButton.simulate('click')
+    button0.simulate('click');
+    equals.simulate('click');
+    expect(runningTotal.text()).toEqual('Infinity');
+  })
+
 })
 
