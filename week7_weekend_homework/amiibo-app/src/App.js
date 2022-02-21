@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import AmiiboContainer from './containers/AmiiboContainer';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <h1>Amiibo List!!</h1>
       <AmiiboContainer/>
     </div>

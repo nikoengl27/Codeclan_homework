@@ -9,10 +9,8 @@ const AmiiboList = ({amiibos, onAmiiboSelected}) => {
     })
 
     return (
-        <div>
-            <ul>
-                {amiiboItems}
-            </ul>
+        <div className="amiibo-list">
+            {amiiboItems}
         </div>
     )
 }

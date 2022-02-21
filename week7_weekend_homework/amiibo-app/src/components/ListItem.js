@@ -9,7 +9,9 @@ const ListItem = ({amiibo, onAmiiboClick}) => {
     return (
     <>
     <p onClick={handleClick}>
+        <div class="amiiboImage">
         <img src={amiibo.image}/><br></br>
+        </div>
     </p>
     <p>
         {amiibo.name}

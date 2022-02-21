@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AmiiboDetail from '../components/Amiibo';
 import AmiiboList from '../components/AmiiboList';
 import AmiiboCollection from '../components/AmiiboCollection';
+import './AmiiboContainer.css'
 
 
 const AmiiboContainer = () => {
@@ -43,16 +44,16 @@ const AmiiboContainer = () => {
     
 
     return (
-        <div className="main-container">
-            <div>
-                {/* {selectedAmiibo ? <AmiiboDetail selectedAmiibo={onAmiiboClick} /> : null} */}
+        <div>
+            <div className="main-container">
+                <div>
                 {selectedAmiibo ? <AmiiboDetail selectedAmiibo={selectedAmiibo} addToCollection={addToCollection}/> : null}
-            </div>
-            <div>
+                </div>
+                <div>
                 {showAmiiboList ? <AmiiboList amiibos={amiibos} onAmiiboSelected={onAmiiboSelected}/> : null}
+                </div>
             </div>
             <div>
-                {/* <AmiiboCollection purchased={purchased} character={purchased.character} onAmiiboSelected={onAmiiboSelected} addToCollection={addToCollection}/> */}
                 <h3>Personal Collection</h3>
                 {purchased ? <AmiiboCollection purchased={purchased}/> : null}
             </div>
