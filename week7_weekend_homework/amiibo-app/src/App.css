@@ -1,16 +1,20 @@
 .amiibo-list{ 
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-column-gap: 1rem;
-  grid-row-gap: 2rem;
+  grid-row-gap: 2rem; */
+  display: grid;
+    height: 500px;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    gap: 25px 60px;
 }
 
 .main-container{
   display: flex;
 }
 
-/* img {
-  display: grid;
+img {
   height: 100px;
   width: auto;
-} */
+  object-fit: cover;
+}
